@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Sort and revers</h3>
+    <script>
+        let numbers = prompt("Enter the numbers separated by comma:").split(',').map(Number);
+        let sorted = [...numbers].sort((a, b) => a - b);
+        let reversed = [...sorted].reverse();
+        document.write("Original: "+numbers+"<br>");
+        document.write("Sorted: "+sorted+"<br>");
+        document.write("Reversed: "+reversed+"<br>");
+    </script>
+</body>
+</html>
